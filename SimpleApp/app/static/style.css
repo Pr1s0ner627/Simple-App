@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #ee7879;
+    font-family: verdana;
+    background-color: #131313;
+    font-size: 22px;
+    text-align: center;
+}
+
+h1 {
+    color: #ee7879;
+    font-family: verdana;
+    font-size: 40px;
+    text-align: center;
+}
+
+#head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: #cae7df;
+    max-width: 1200px;
+}
+
+a {
+    text-decoration: none;  
+    color: #ee7879;
+    font-size: 20px;
+    &:hover {
+        color: #131313;
+        text-shadow: 2px #e1e2e2;
+    }
+}
+
+#taskfield {
+    background-color: #cae7df;
+    color: #131313;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 2px solid #e1e2e2;
+}
+
+#taskfield input[type="text"],
+#taskfield input[type="email"],
+#taskfield select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #e1e2e2;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+li {
+    text-decoration: none;  
+    align-items: center;
+    text-align: left;
+}
+
+#uadd {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #e1e2e2;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px 25px;
+}
+
+button {
+    background-color: #cae7df;
+    color: #ee7879;
+    border: 2px solid #e1e2e2;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    font-size: 20px;
+    &:hover {
+        background-color: #ee7879;
+        color: #cae7df;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    #head, #navbar {
+        flex-direction: column;
+    }
+
+    #navbar {
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    #taskfield, #uadd {
+        flex-direction: column;
+    }
+
+    #taskfield input[type="text"],
+    #taskfield input[type="email"],
+    #taskfield select {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 8px 20px;
+        font-size: 18px;
+    }
+}
